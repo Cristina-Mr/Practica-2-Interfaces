@@ -1,0 +1,137 @@
+body{
+    background-image: url(fondo4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0;/* Para quitar los márgenes encuanto al div y el navegador*/
+    padding:0;/* Para quitar los márgenes encuanto al div y el navegador*/
+}
+
+.nav{
+    background: rgb(30,194,213);
+    background: linear-gradient(90deg, rgba(30,194,213,1) 41%, rgba(147,245,251,1) 68%);
+    box-shadow: 0px 4px 7px black;
+    text-align: right;
+    height: 150px;
+    width: 100%;
+    display:block;
+    margin-bottom: 20px;
+}
+
+.centro{
+    text-align: center;
+}
+.caja1 {
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border: 1px solid rgb(20, 92, 248);
+    overflow: scroll;
+    float: left;
+    position: relative;
+  }
+  .caja2 {
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border: 1px solid rgb(20, 92, 248);
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+  .caja3 {
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border: 1px solid rgb(20, 92, 248);
+    overflow: scroll;
+    float: right;
+    position: relative;
+  }
+
+  #titulos{
+    color: black;
+    text-decoration: underline;
+} 
+
+#text{
+    color: black;
+}
+
+#tasks{
+    align-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    width: 200px;
+    margin: 1.5em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+#cabeceras{
+    text-align: center;
+    margin-top: 1em;
+}
+
+p{
+    font-size: 25px;
+    font-family: sans-serif, serif, Verdana, Tahoma;
+    text-shadow: 0px 4px rgba(224, 149, 87, 0.671);
+    text-align: center;
+}
+
+a{
+    font-family:  serif ,sans-serif, Verdana, Tahoma;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/*
+table{
+    color: white;
+    margin: 1em;
+    font-size: 16px;
+    padding: 1em;
+    border-collapse: separate;
+	border-spacing: 20px 10px;
+    text-align: left;
+
+}*/
+
+.pie{
+    background-color: rgba(17, 17, 61, 0.815);
+    position: absolute;/* Para que aparezca al final de la pagina*/
+    bottom: 0;/* Para que aparezca al final de la pagina junto con absolute*/
+    width: 100%;
+    height: 16em;
+    justify-content: center;
+    position: fixed;
+    
+}
+
+h6{
+    color: white;
+    align-items: center;
+    display: inline;
+    font-size: 18px;
+    font-family: sans-serif, serif, Tahoma, Arial;
+    font-style: italic;
+}
+h4{
+    color: white;
+    align-items: center;
+    display: inline;
+    font-size: 18px;
+    font-family: sans-serif, serif, Tahoma, Arial;
+    font-style: italic;
+}
+
+th{
+    font-family:  sans-serif, Verdana, Tahoma;
+    font-style: italic;/* Cursiva*/
+    padding-bottom: 1em;
+}
+
+td{
+    font-family:  serif, Verdana, Tahoma;
+    font-size: 20px;
+    color: rgb(212, 208, 208);
+}
