@@ -6,146 +6,261 @@ body{
     padding:0;/* Para quitar los márgenes encuanto al div y el navegador*/
 }
 
+/****************    NAVEGADOR SUPERIOR    *********************/
+
 .nav{
     background: rgb(30,194,213);
     background: linear-gradient(90deg, rgba(30,194,213,1) 41%, rgba(147,245,251,1) 68%);
-    box-shadow: 0px 4px 7px black;
-    text-align: right;
+    box-shadow: 0px 4px 8px black;
     height: 150px;
     width: 100%;
-    display:block;
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 12px;
     overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+}
+img{
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    width: 140px;
+    height: 150px;
+    float: left;
+}
+.enlaces{
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    width: 40%;
+    display: flex;
+    margin-left: 70em; /* reducir espacio a la izquierda de cada elemento */
+    justify-content: space-around; 
+}
+.eslogan{
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    width: 26%;
+    margin-left: 18em; /* reducir espacio a la izquierda y a la derecha de cada elemento */
+    font-family: sans-serif, serif, Verdana, Tahoma;
+    text-shadow: 0px 4px rgba(224, 149, 87, 0.671);
+    font-size: 30px;
 }
 
-.eslogan{
-    position: absolute;
-    bottom: 0;
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
-    
-}
+
+/****************    CENTRO     *********************/
+
 
 .centro{
-    text-wrap: wrap;
+    position: relative;
+    height: 524px; /* Tamaño del contenedor, ajusta según sea necesario */
+   /* border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     justify-content: space-around;
+    margin: 0 20em; /* reducir espacio a la izquierda y a la derecha de cada elemento */
 }
+
 .caja1 {
-    background-color: white;
-    width: 280px;
-    height: 400px;
-    border: 1px solid rgb(20, 92, 248);
-    float: left;
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 350px;
+    height: 420px;
+    border: 3px solid rgb(20, 92, 248);
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
-    border: 1px solid #ccc; /* Añade un borde para visualización */
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+
   }
   .caja2 {
-    background-color: white;
-    width: 280px;
-    height: 400px;
-    border: 1px solid rgb(20, 92, 248);
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 350px;
+    height: 420px;
+    border: 2px solid rgb(243, 200, 59);
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     float: left;
     overflow: hidden;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
   }
   .caja3 {
-    background-color: white;
-    width: 280px;
-    height: 400px;
-    border: 1px solid rgb(20, 92, 248);
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 350px;
+    height: 420px;
+    border: 3px solid rgb(34, 167, 52);
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     float: left;
     overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
-    border: 1px solid #ccc; /* Añade un borde para visualización */
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
   }
 
-  #titulos{
+h3{
     color: black;
     text-decoration: underline;
+    font-family: sans-serif, Verdana Tahoma, serif;
+    font-size: 16px;
 } 
 
-#text{
-    color: black;
+p{
+    color: rgb(32, 32, 32);
+    font-family: sans-serif, Verdana Tahoma, serif;
 }
 
-#tasks{
-    align-content: center;
-    border: 1px solid rgb(0, 0, 0);
-    width: 200px;
+#tasks1{
+
+    border: 2px solid rgb(31, 110, 230);
+    width: 220px;
     margin: 1.5em;
     text-align: center;
     padding-bottom: 0.5em;
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
+    background-color: white;
+    
 }
 
-#cabeceras{
+#tasks2{
+    align-content: center;
+    border: 2px solid rgb(243, 200, 59);
+    width: 220px;
+    margin: 1.5em;
     text-align: center;
-    margin-top: 1em;
+    padding-bottom: 0.5em;
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
+    background-color: white;
 }
 
-p{
+#tasks3{
+    align-content: center;
+    border: 3px solid rgb(34, 167, 52);
+    width: 220px;
+    margin: 1.5em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
+    background-color: white;
+}
+
+#cabecera1{
+/******* Estilo para la fuente *******/
+
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    color: rgb(31, 110, 230);
+    text-shadow: 0px 4px rgba(126, 126, 125, 0.671);
     font-size: 25px;
-    font-family: sans-serif, serif, Verdana, Tahoma;
-    text-shadow: 0px 4px rgba(224, 149, 87, 0.671);
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+
+/******* Estilo para el div *******/
+    margin-top: 1em;
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    margin-top: 0;
+    background-color: white;
+    height: 60px;
+    border-bottom: 2px solid rgb(31, 110, 230);
+}
+
+#cabecera2{
+/******* Estilo para la fuente *******/
+
     text-align: center;
+    color:rgb(243, 200, 59);
+    font-family: 'Shantell Sans', cursive;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 25px;
+    text-shadow: 0px 4px rgba(126, 126, 125, 0.671);
+
+/******* Estilo para el div *******/
+
+    margin-top: 1em;
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    margin-top: 0;
+    background-color: white;
+    height: 60px;
+    border-bottom: 2px solid rgb(243, 200, 59);
+
+}
+
+#cabecera3{
+/******* Estilo para la fuente *******/
+
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 25px;
+    color: rgb(34, 167, 52);
+    text-shadow: 0px 4px rgba(126, 126, 125, 0.671);
+
+/******* Estilo para el div *******/
+
+    margin-top: 1em;
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    margin-top: 0;
+    background-color: white;
+    height: 60px;
+    border-bottom: 2px solid rgb(34, 167, 52);
 }
 
 a{
+    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
     font-family:  serif ,sans-serif, Verdana, Tahoma;
     font-size: 20px;
     color: black;
     text-decoration: none;
+    justify-content: space-around;
+    margin: 3 1em; 
 }
-
-/*
-table{
-    color: white;
-    margin: 1em;
-    font-size: 16px;
-    padding: 1em;
-    border-collapse: separate;
-	border-spacing: 20px 10px;
-    text-align: left;
-
-}*/
+/*************************************************************    NAVEGADOR INFERIOR    ******************************************/
 
 .pie{
-    background-color: rgba(17, 17, 61, 0.815);
+    background-color: rgba(20, 20, 71, 0.815);
     position: absolute;/* Para que aparezca al final de la pagina*/
     bottom: 0;/* Para que aparezca al final de la pagina junto con absolute*/
     width: 100%;
-    height: 16em;
-    justify-content: center;
-    position: fixed;
-    
+    height: 17em;
+    overflow: hidden;
+    border-top: 1.5px solid black;
+    box-shadow: 0px -3px 0px rgba(3, 2, 65, 0.5);
+    color: white;
+    overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
 }
 
-h6{
+table{
     color: white;
-    align-items: center;
-    display: inline;
-    font-size: 18px;
-    font-family: sans-serif, serif, Tahoma, Arial;
-    font-style: italic;
+    font-size: 16px;
+	border-spacing: 200px 15px;
+    width: 100%;
+    margin: auto; /* Centra la tabla dentro del contenedor */
+    padding: 0.5px; /* Ajusta el espacio interno de las celdas */
+
 }
-h4{
-    color: white;
-    align-items: center;
-    display: inline;
+table p {
+    color: whitesmoke;
+    font-family: serif, serif, Tahoma;
+    margin: 0;
     font-size: 18px;
-    font-family: sans-serif, serif, Tahoma, Arial;
-    font-style: italic;
+    text-align: justify;
 }
 
-/*th{
+table h6{
+    color: white;
+    display: inline;
+    font-size: 20px;
+    font-family: sans-serif, serif, Tahoma, Arial;
+}
+
+th{
     font-family:  sans-serif, Verdana, Tahoma;
     font-style: italic;/* Cursiva*/
-  /*  padding-bottom: 1em;
 }
 
-td{
-    font-family:  serif, Verdana, Tahoma;
-    font-size: 20px;
-    color: rgb(212, 208, 208);
-}*/
+tr,td{
+    text-align: left;
+  }
+
+h4{
+    text-align: center;
+}
