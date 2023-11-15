@@ -18,25 +18,30 @@ body{
     overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
 }
 img{
-    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    /*border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
     width: 140px;
     height: 150px;
     float: left;
 }
 .enlaces{
-    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    /*border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
     width: 40%;
     display: flex;
     margin-left: 70em; /* reducir espacio a la izquierda de cada elemento */
     justify-content: space-around; 
+    position: fixed;/*siempre permanece en el mismo lugar incluso si se desplaza la página.*/
+    top: 120;/*se utilizan para posicionar el elemento.*/
 }
 .eslogan{
-    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+  /*  border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
     width: 26%;
     margin-left: 18em; /* reducir espacio a la izquierda y a la derecha de cada elemento */
     font-family: sans-serif, serif, Verdana, Tahoma;
+    font-size: 14px;
     text-shadow: 0px 4px rgba(224, 149, 87, 0.671);
     font-size: 30px;
+    position: fixed;/*siempre permanece en el mismo lugar incluso si se desplaza la página.*/
+    top: 80;/*se utilizan para posicionar el elemento.*/
 }
 
 
@@ -59,7 +64,7 @@ img{
     background-color: rgba(255, 255, 255, 0.685);
     width: 350px;
     height: 420px;
-    border: 3px solid rgb(20, 92, 248);
+    border: 2px solid rgb(20, 92, 248);
     border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
     flex-wrap: wrap;
@@ -83,7 +88,7 @@ img{
     background-color: rgba(255, 255, 255, 0.685);
     width: 350px;
     height: 420px;
-    border: 3px solid rgb(34, 167, 52);
+    border: 2px solid rgb(34, 167, 52);
     border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     float: left;
     overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
@@ -106,19 +111,19 @@ p{
 
 #tasks1{
 
-    border: 2px solid rgb(31, 110, 230);
-    width: 220px;
+    border: 1.5px solid rgb(31, 110, 230);
+    width: 250px;
     margin: 1.5em;
     text-align: center;
     padding-bottom: 0.5em;
     border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     background-color: white;
-    
 }
 
 #tasks2{
-    align-content: center;
-    border: 2px solid rgb(243, 200, 59);
+   
+
+    border: 1.5px solid rgb(243, 200, 59);
     width: 220px;
     margin: 1.5em;
     text-align: center;
@@ -126,10 +131,14 @@ p{
     border-radius: 10px; /* Redondea los bordes, ajusta el valor según tus necesidades */
     background-color: white;
 }
-
+.t{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 #tasks3{
     align-content: center;
-    border: 3px solid rgb(34, 167, 52);
+    border: 1.5px solid rgb(34, 167, 52);
     width: 220px;
     margin: 1.5em;
     text-align: center;
@@ -156,7 +165,7 @@ p{
     margin-top: 0;
     background-color: white;
     height: 60px;
-    border-bottom: 2px solid rgb(31, 110, 230);
+    border-bottom: 1.5px solid rgb(31, 110, 230);
 }
 
 #cabecera2{
@@ -178,7 +187,7 @@ p{
     margin-top: 0;
     background-color: white;
     height: 60px;
-    border-bottom: 2px solid rgb(243, 200, 59);
+    border-bottom: 1.5px solid rgb(243, 200, 59);
 
 }
 
@@ -201,17 +210,20 @@ p{
     margin-top: 0;
     background-color: white;
     height: 60px;
-    border-bottom: 2px solid rgb(34, 167, 52);
+    border-bottom: 1.5px solid rgb(34, 167, 52);
 }
 
 a{
-    border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa el div*/
+    /*border: 1px solid #ccc; /* Añade un borde para visualización de lo que ocupa cada enlace*/
     font-family:  serif ,sans-serif, Verdana, Tahoma;
     font-size: 20px;
     color: black;
     text-decoration: none;
     justify-content: space-around;
     margin: 3 1em; 
+    border-left: 1px solid rgb(37, 187, 204);
+    padding-left: 4em;
+    padding-bottom: 0.2em;
 }
 /*************************************************************    NAVEGADOR INFERIOR    ******************************************/
 
@@ -220,7 +232,7 @@ a{
     position: absolute;/* Para que aparezca al final de la pagina*/
     bottom: 0;/* Para que aparezca al final de la pagina junto con absolute*/
     width: 100%;
-    height: 17em;
+    height: 14em;
     overflow: hidden;
     border-top: 1.5px solid black;
     box-shadow: 0px -3px 0px rgba(3, 2, 65, 0.5);
@@ -231,7 +243,7 @@ a{
 table{
     color: white;
     font-size: 16px;
-	border-spacing: 200px 15px;
+	border-spacing: 200px 9px;
     width: 100%;
     margin: auto; /* Centra la tabla dentro del contenedor */
     padding: 0.5px; /* Ajusta el espacio interno de las celdas */
@@ -263,4 +275,5 @@ tr,td{
 
 h4{
     text-align: center;
+    font-size: 18px;
 }
