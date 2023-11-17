@@ -1,7 +1,7 @@
 body{
     background-image: url(fondo4.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin:0;/* Para quitar los márgenes encuanto al div y el navegador*/
     padding:0;/* Para quitar los márgenes encuanto al div y el navegador*/
 }
@@ -112,7 +112,7 @@ p{
 #tasks1{
 
     border: 1.5px solid rgb(31, 110, 230);
-    width: 250px;
+    width: 220px;
     margin: 1.5em;
     text-align: center;
     padding-bottom: 0.5em;
@@ -121,8 +121,6 @@ p{
 }
 
 #tasks2{
-   
-
     border: 1.5px solid rgb(243, 200, 59);
     width: 220px;
     margin: 1.5em;
@@ -166,6 +164,7 @@ p{
     background-color: white;
     height: 60px;
     border-bottom: 1.5px solid rgb(31, 110, 230);
+    overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
 }
 
 #cabecera2{
@@ -188,6 +187,7 @@ p{
     background-color: white;
     height: 60px;
     border-bottom: 1.5px solid rgb(243, 200, 59);
+    overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
 
 }
 
@@ -211,6 +211,7 @@ p{
     background-color: white;
     height: 60px;
     border-bottom: 1.5px solid rgb(34, 167, 52);
+    overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
 }
 
 a{
@@ -224,20 +225,22 @@ a{
     border-left: 1px solid rgb(37, 187, 204);
     padding-left: 4em;
     padding-bottom: 0.2em;
+    position: relative;
 }
 /*************************************************************    NAVEGADOR INFERIOR    ******************************************/
 
 .pie{
     background-color: rgba(20, 20, 71, 0.815);
-    position: absolute;/* Para que aparezca al final de la pagina*/
+    position: fixed;/*siempre permanece en el mismo lugar incluso si se desplaza la página.*/
     bottom: 0;/* Para que aparezca al final de la pagina junto con absolute*/
     width: 100%;
-    height: 14em;
+    height: 14.6em;
     overflow: hidden;
     border-top: 1.5px solid black;
     box-shadow: 0px -3px 0px rgba(3, 2, 65, 0.5);
     color: white;
     overflow: hidden; /* Asegura que el contenido no sobresalga si es demasiado grande */
+
 }
 
 table{
@@ -260,7 +263,7 @@ table p {
 table h6{
     color: white;
     display: inline;
-    font-size: 20px;
+    font-size: 18px;
     font-family: sans-serif, serif, Tahoma, Arial;
 }
 
@@ -276,4 +279,10 @@ tr,td{
 h4{
     text-align: center;
     font-size: 18px;
+}
+.linksf{
+    color: white;
+    padding-left: 0;
+    border: 0px;
+
 }
